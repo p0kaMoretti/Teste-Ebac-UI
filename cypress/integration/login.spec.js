@@ -29,3 +29,4 @@ context('funcionalidade login', () =>{
 
         cy.get('.woocommerce-error > li').should('contain' , 'Erro: A senha fornecida para o e-mail')
     })
+})
