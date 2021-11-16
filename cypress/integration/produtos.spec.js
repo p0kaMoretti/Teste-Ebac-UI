@@ -33,4 +33,8 @@ describe('Funcionalidade página de produtos', () => {
         cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Atlas Fitness Tank” foram adicionados no seu carrinho.' )
     });
 
+    it('Deve adicionar produtos ao carrinho - Usando comando customizado', () => {
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Yellow', 2)
+    });
+
 });
